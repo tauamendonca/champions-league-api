@@ -1,0 +1,196 @@
+{
+  "clubs": [
+    {
+      "id": 1,
+      "name": "Bayern Munich",
+      "city": "Munich",
+      "country": "Germany"
+    },
+    {
+      "id": 2,
+      "name": "Napoli",
+      "city": "Naples",
+      "country": "Italy"
+    },
+    {
+      "id": 3,
+      "name": "Manchester City",
+      "city": "Manchester",
+      "country": "England"
+    },
+    {
+      "id": 4,
+      "name": "Villarreal",
+      "city": "Villarreal",
+      "country": "Spain"
+    },
+    {
+      "id": 5,
+      "name": "Internazionale",
+      "city": "Milan",
+      "country": "Italy"
+    },
+    {
+      "id": 6,
+      "name": "CSKA Moscow",
+      "city": "Moscow",
+      "country": "Russia"
+    },
+    {
+      "id": 7,
+      "name": "Lille",
+      "city": "Lille",
+      "country": "France"
+    },
+    {
+      "id": 8,
+      "name": "Trabzonspor",
+      "city": "Trabzon",
+      "country": "Turkey"
+    },
+    {
+      "id": 9,
+      "name": "Manchester United",
+      "city": "Manchester",
+      "country": "England"
+    },
+    {
+      "id": 10,
+      "name": "Benfica",
+      "city": "Lisbon",
+      "country": "Portugal"
+    },
+    {
+      "id": 11,
+      "name": "Basel",
+      "city": "Basel",
+      "country": "Switzerland"
+    },
+    {
+      "id": 12,
+      "name": "Oțelul Galați",
+      "city": "Galați",
+      "country": "Romania"
+    },
+    {
+      "id": 13,
+      "name": "Real Madrid",
+      "city": "Madrid",
+      "country": "Spain"
+    },
+    {
+      "id": 14,
+      "name": "Lyon",
+      "city": "Lyon",
+      "country": "France"
+    },
+    {
+      "id": 15,
+      "name": "Ajax",
+      "city": "Amsterdam",
+      "country": "Netherlands"
+    },
+    {
+      "id": 16,
+      "name": "Dinamo Zagreb",
+      "city": "Zagreb",
+      "country": "Croatia"
+    },
+    {
+      "id": 17,
+      "name": "Chelsea",
+      "city": "London",
+      "country": "England"
+    },
+    {
+      "id": 18,
+      "name": "Bayer Leverkusen",
+      "city": "Leverkusen",
+      "country": "Germany"
+    },
+    {
+      "id": 19,
+      "name": "Valencia",
+      "city": "Valencia",
+      "country": "Spain"
+    },
+    {
+      "id": 20,
+      "name": "Genk",
+      "city": "Genk",
+      "country": "Belgium"
+    },
+    {
+      "id": 21,
+      "name": "Arsenal",
+      "city": "London",
+      "country": "England"
+    },
+    {
+      "id": 22,
+      "name": "Marseille",
+      "city": "Marseille",
+      "country": "France"
+    },
+    {
+      "id": 23,
+      "name": "Olympiacos",
+      "city": "Piraeus",
+      "country": "Greece"
+    },
+    {
+      "id": 24,
+      "name": "Borussia Dortmund",
+      "city": "Dortmund",
+      "country": "Germany"
+    },
+    {
+      "id": 25,
+      "name": "Porto",
+      "city": "Porto",
+      "country": "Portugal"
+    },
+    {
+      "id": 26,
+      "name": "Shakhtar Donetsk",
+      "city": "Donetsk",
+      "country": "Ukraine"
+    },
+    {
+      "id": 27,
+      "name": "Zenit Saint Petersburg",
+      "city": "Saint Petersburg",
+      "country": "Russia"
+    },
+    {
+      "id": 28,
+      "name": "APOEL",
+      "city": "Nicosia",
+      "country": "Cyprus"
+    },
+    {
+      "id": 29,
+      "name": "Barcelona",
+      "city": "Barcelona",
+      "country": "Spain"
+    },
+    {
+      "id": 30,
+      "name": "Milan",
+      "city": "Milan",
+      "country": "Italy"
+    },
+    {
+      "id": 31,
+      "name": "BATE Borisov",
+      "city": "Borisov",
+      "country": "Belarus"
+    },
+    {
+      "id": 32,
+      "name": "Viktoria Plzeň",
+      "city": "Plzeň",
+      "country": "Czech Republic"
+    }
+  ]
+}
