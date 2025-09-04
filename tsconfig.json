@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "module": "nodenext",
+    "target": "ES6",
+    "outDir": "./dist",
+    "strict": true,
+    "esModuleInterop": true
+  },
+}
+
