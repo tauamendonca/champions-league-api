@@ -1,9 +1,15 @@
 import express, { json, Request, Response } from "express";
 
-const app = express();
+function createApp() {
+    const app = express();
 
-app.use(json());
+    app.use(json());
 
-app.get("/", (req: Request, res: Response) => {
-    res.status(200).json({player: "Sergio Busquets"});
-});
+    app.get("/", (req: Request, res: Response) => {
+        res.status(200).json({player: "Sergio Busquets"});
+    });
+
+    return app;
+}
+
+export default createApp;
