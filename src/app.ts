@@ -1,15 +1,21 @@
-import express, { json, Request, Response } from "express";
+import express from "express";
+import router from "./routes";
+import cors from "cors";
 
 function createApp() {
-    const app = express();
+  const app = express();
 
-    app.use(json());
+  app.use(express.json());
+  app.use("/api", router);
 
-    app.get("/", (req: Request, res: Response) => {
-        res.status(200).json({player: "Sergio Busquets"});
-    });
+  const corsOptions = {
+    origin: ["http://tau.system.com", "http://dio.me"],
+    methods: ["GET", "UPDATE"],
+  };
 
-    return app;
+  app.use(cors());
+
+  return app;
 }
 
 export default createApp;
