@@ -8,8 +8,6 @@ Foi criada a partir de um projeto original do bootcamp MeuTudo Mobile Developer 
 
 ## Funcionalidades
 
-
-(PLACEHOLDER)
 - **Listar os jogadores e clubes:** Os jogadores tem estatísticas como as de um jogo de simulação de futebol (Fifa/Winning Eleven/Elifoot), com o intuito de demonstrar o uso de uma classe contendo outra em seus atributos. 
 - **Adicionar / Remover / Alterar Jogadores :** Os usuários podem realizar adições, remoções e alterações dos jogadores com as rotas adequadas.
 
