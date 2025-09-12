@@ -1,0 +1,84 @@
+{
+  "players": [
+    {
+      "id": 1,
+      "name": "Lionel Messi",
+      "club": "Barcelona",
+      "nationality": "Argentina",
+      "position": "Forward",
+      "statistics": {
+        "Overall": 98,
+        "Pace": 90,
+        "Shooting": 95,
+        "Passing": 92,
+        "Dribbling": 99,
+        "Defending": 40,
+        "Physical": 70
+      }
+    },
+    {
+      "id": 2,
+      "name": "Cristiano Ronaldo",
+      "club": "Real Madrid",
+      "nationality": "Portugal",
+      "position": "Forward",
+      "statistics": {
+        "Overall": 96,
+        "Pace": 93,
+        "Shooting": 94,
+        "Passing": 85,
+        "Dribbling": 91,
+        "Defending": 35,
+        "Physical": 88
+      }
+    },
+    {
+      "id": 3,
+      "name": "Xavi Hernández",
+      "club": "Barcelona",
+      "nationality": "Spain",
+      "position": "Midfielder",
+      "statistics": {
+        "Overall": 93,
+        "Pace": 70,
+        "Shooting": 80,
+        "Passing": 99,
+        "Dribbling": 88,
+        "Defending": 65,
+        "Physical": 75
+      }
+    },
+    {
+      "id": 4,
+      "name": "Andrés Iniesta",
+      "club": "Barcelona",
+      "nationality": "Spain",
+      "position": "Midfielder",
+      "statistics": {
+        "Overall": 92,
+        "Pace": 82,
+        "Shooting": 78,
+        "Passing": 94,
+        "Dribbling": 95,
+        "Defending": 55,
+        "Physical": 68
+      }
+    },
+    {
+      "id": 5,
+      "name": "Wayne Rooney",
+      "club": "Manchester United",
+      "nationality": "England",
+      "position": "Forward",
+      "statistics": {
+        "Overall": 90,
+        "Pace": 84,
+        "Shooting": 89,
+        "Passing": 82,
+        "Dribbling": 85,
+        "Defending": 60,
+        "Physical": 88
+      }
+    }
+  ]
+}

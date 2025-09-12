@@ -1,0 +1,34 @@
+{
+ "clubs": [
+    {
+      "id": 1,
+      "name": "Bayern Munich",
+      "city": "Munich",
+      "country": "Germany"
+    },
+    {
+      "id": 2,
+      "name": "Napoli",
+      "city": "Naples",
+      "country": "Italy"
+    },
+    {
+      "id": 3,
+      "name": "Manchester City",
+      "city": "Manchester",
+      "country": "England"
+    },
+    {
+      "id": 4,
+      "name": "Villarreal",
+      "city": "Villarreal",
+      "country": "Spain"
+    },
+    {
+      "id": 5,
+      "name": "Internazionale",
+      "city": "Milan",
+      "country": "Italy"
+    }
+  ]
+}

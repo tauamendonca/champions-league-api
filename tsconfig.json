@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
-    "module": "nodenext",
-    "target": "ES6",
+    "target": "esnext",
+    "module": "esnext",
     "outDir": "./dist",
     "strict": true,
     "esModuleInterop": true
