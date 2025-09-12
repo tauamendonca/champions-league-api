@@ -4,7 +4,7 @@
 
 Este é um exemplo de uma API REST com dados de jogadores que jogaram pela Champions League. Permite até o momento listar jogadores, listar clubes e fazer as operações GET, POST, PUT e DELETE com uma lista de jogadores. 
 
-Foi criada a partir de um projeto original do bootcamp MeuTudo Mobile Developer da DIO, e o projeto original pode ser cechado [aqui](https://github.com/felipeAguiarCode/node-ts-webapi-without-frameworks-podcast-menager).
+Foi criada a partir de um projeto original do bootcamp MeuTudo Mobile Developer da DIO, e o projeto original pode ser checado [aqui](https://github.com/felipeAguiarCode/node-ts-webapi-without-frameworks-podcast-menager).
 
 ## Funcionalidades
 
