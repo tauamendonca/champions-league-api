@@ -1,59 +1,74 @@
-# Podcast Manager
+# Champions League API
 
 ## Descrição
 
-(PLACEHOLDER)
-O Podcast Manager é uma aplicação inspirada no estilo da Netflix, que permite centralizar diferentes episódios de podcasts separados por categoria. Este projeto visa facilitar o acesso e a organização de episódios de podcasts em formato de vídeo, proporcionando uma experiência de navegação intuitiva e agradável para os usuários. Foi criado a partir de um projeto original do bootcamp MeuTudo Mobile Developer da DIO, e o projeto original pode ser cechado [aqui](https://github.com/felipeAguiarCode/node-ts-webapi-without-frameworks-podcast-menager).
+Este é um exemplo de uma API REST com dados de jogadores que jogaram pela Champions League. Permite até o momento listar jogadores, listar clubes e fazer as operações GET, POST, PUT e DELETE com uma lista de jogadores. 
+
+Foi criada a partir de um projeto original do bootcamp MeuTudo Mobile Developer da DIO, e o projeto original pode ser cechado [aqui](https://github.com/felipeAguiarCode/node-ts-webapi-without-frameworks-podcast-menager).
 
 ## Funcionalidades
 
 
 (PLACEHOLDER)
-- **Listar os episódios de podcasts em sessões de categorias:** Os episódios são organizados em categorias como esporte, música, cultura e humor, permitindo aos usuários explorar facilmente os conteúdos disponíveis.
-- **Filtrar episódios por nome de podcast:** Os usuários podem realizar buscas específicas por nome de podcast, facilitando o acesso aos episódios desejados.
+- **Listar os jogadores e clubes:** Os jogadores tem estatísticas como as de um jogo de simulação de futebol (Fifa/Winning Eleven/Elifoot), com o intuito de demonstrar o uso de uma classe contendo outra em seus atributos. 
+- **Adicionar / Remover / Alterar Jogadores :** Os usuários podem realizar adições, remoções e alterações dos jogadores com as rotas adequadas.
 
 ### Funcionalidades adicionadas por mim
-- **Filtrar episódios por nome dos mesmos:** Os usuários podem realizar buscas por uma palavra ou uma frase que seja o nome do episódio cadastrado, facilitando encontrar um episódio específico.
+- **Gravar alterações dos jogadores em arquivo:** O banco de dados dos jogadores está sendo retirado e gravado a partir de um arquivo JSON. As alterações ficam gravadas nesse arquivo mesmo que o server seja finalizado.
 
-## Implementação
-
-
-(PLACEHOLDER)
-### Listar os episódios de podcasts em sessões de categorias
-
-- **Endpoint:** `GET /list`
-- **Descrição:** Retorna uma lista de episódios de podcasts organizados por categorias.
+### Listar os clubes participantes
+- **Endpoint:** `GET /clubs`
+- **Descrição:** Retorna uma lista de clubes participantes da Champions League.
 - **Exemplo de resposta:**
 
 ```json
-[
-       {
-            "podcastName": "Ambiente de Música",
-            "episodeNumber": "1",
-            "episode": "Metal",
-            "videoId": "bTdBPHObC4o",
-            "cover": "https://i.ytimg.com/vi/bTdBPHObC4o/hq720.jpg?sqp=-oaymwFBCNAFEJQDSFryq4qpAzMIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB8AEB-AH-CYAC0AWKAgwIABABGH8gOig0MA8=&rs=AOn4CLBbS7zzq_xIjdTeUFN8wz5CCzKfag",
-            "link": "https://www.youtube.com/watch?v=bTdBPHObC4o",
-            "categories": ["música", "cultura", "transporte alternativo"]    
-        },
-        {
-            "podcastName": "Falha de Cobertura",
-            "episodeNumber": "252",
-            "episode": "Neymar condenado a jogar",
-            "videoId": "ckCjUS1j0io",
-            "cover": "https://i.ytimg.com/vi/ckCjUS1j0io/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLBHBPbIsdGgJzz8tm0qXzKMRa51KA",
-            "link": "https://www.youtube.com/watch?v=ckCjUS1j0io",
-            "categories": ["música", "cultura", "transporte alternativo"]    
-        }
-]
+{
+ "clubs": [
+    {
+      "id": 1,
+      "name": "Bayern Munich",
+      "city": "Munich",
+      "country": "Germany"
+    },
+    {
+      "id": 2,
+      "name": "Napoli",
+      "city": "Naples",
+      "country": "Italy"
+    },
+ ]
+}
 ```
-(PLACEHOLDER)
-### Filtrar episódios por nome de podcast
 
-- **Endpoint:** `GET /podcasts?podcastName={nome}`
-- **Descrição:** Retorna uma lista de episódios de podcast com base no nome do podcast fornecido. Não é case sensitive,mas leva em conta espaços.
-- **Exemplo de requisição:** `GET /podcasts?podcastName=Falha%20de%20Cobertura`
 
+### Listar jogadores
+- **Endpoint:** `GET /players`
+- **Descrição:** Retorna uma lista de jogadores a partir do disponível no banco de dados 'player_database.json'. 
+- **Exemplo de requisição:** `GET /players`
+
+
+### Exibir jogador por ID
+- **Endpoint:** `GET /players/:id`
+- **Descrição:** Retorna o jogador com o id requisitado a partir do disponível no banco de dados 'player_database.json'. 
+- **Exemplo de requisição:** `GET /players/5`
+
+
+### Criar jogadores
+- **Endpoint:** `PATCH /players`
+- **Descrição:** Cria um novo jogador. É necessário passar as características como parâmetro.  
+- **Exemplo de requisição:** `POST /players`
+
+
+### Alterar jogadores
+- **Endpoint:** `PATCH /players/id`
+- **Descrição:** Altera os dados do jogador com a id indicada. É necessário passar as características como parâmetro.  
+- **Exemplo de requisição:** `PATCH /players/id`
+
+
+### Remover jogadores
+- **Endpoint:** `DELETE /players/id`
+- **Descrição:** Retorna uma lista de jogadores a partir do disponível no banco de dados 'player_database.json'. 
+- **Exemplo de requisição:** `DELETE /players/id`
 
 
 
@@ -64,17 +79,21 @@ O Podcast Manager é uma aplicação inspirada no estilo da Netflix, que permite
 - **[Tsx](https://github.com/egoist/tsx):** Compilador TypeScript que suporta a construção de projetos.
 - **[Node.js](https://nodejs.org/):** Ambiente de execução JavaScript que permite executar código JavaScript do lado do servidor.
 - **[@types/node](https://www.npmjs.com/package/@types/node):** Pacote de definições de tipos para Node.js para auxiliar no desenvolvimento com TypeScript.
+- **[cors]():**
+Pacote que disponibiliza middleware para o Connect/Express utilizado para habilitar o CORS com opções.
+- **[Express]():**
+Framework minimalista para Node.js
 
 ## Como Utilizar
 
 1. Clone este repositório.
 2. Instale as dependências usando `npm install`.
 3. Inicie o servidor executando `start:dev`.
-4. Acesse os endpoints fornecidos para listar os episódios de podcasts ou filtrá-los por nome de podcast.
+4. Acesse os endpoints fornecidos
 
 ### Observações
 
-Foram realizadas algumas mudanças em como o banco de dados era simulado, sendo que no projeto original a simulação foi feita com uma variável dentro do controle e aqui eu trabalho com arquivos JSON dentro da pasta Data (os arquivos de nome Database). Nesse projeto, fiz com que seja possível gravar dados nesses arquivos, mantendo assim as alterações realizadas entre uma sessão e outra. Para isso, transformo de JSON para objeto e de volta.
+Foram realizadas algumas mudanças em como o banco de dados era simulado, sendo que no projeto original a simulação foi feita com uma variável dentro do controle e aqui eu trabalho com arquivos JSON dentro da pasta Data (os arquivos de nome Database). Nesse projeto, fiz com que seja possível gravar dados nesses arquivos, mantendo assim as alterações realizadas entre uma sessão e outra.
 
 ## Contribuição
 

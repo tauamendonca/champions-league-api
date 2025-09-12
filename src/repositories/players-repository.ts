@@ -4,8 +4,12 @@ import { databaseLoad } from "../utils/database-helper";
 
 
 // "./src/data/player_database.json"
-let player_database: Array<PlayerModel> = await databaseLoad("./src/data/player_database.json");
+let player_database: PlayerModel[];
 
+(async () => {
+  const db = await databaseLoad("./src/data/player_database.json");
+  player_database = db.players;
+})();
 
 export const findAllPlayers = async (): Promise<PlayerModel[]> => {
   return player_database;
