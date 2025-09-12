@@ -8,6 +8,7 @@ function createApp() {
   app.use(express.json());
   app.use("/api", router);
 
+  // Opções de Cors somente como exemplo
   const corsOptions = {
     origin: ["http://tau.system.com", "http://dio.me"],
     methods: ["GET", "UPDATE"],
